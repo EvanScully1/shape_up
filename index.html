@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+	<!-- order of links matters! slicknav over main in this case -->
 	<meta charset="utf-8" />
-
-		<!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-		<link rel="stylesheet" href="main.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="./styles/main.css">
 	<title>Shape Up!</title>
 	<link rel="shortcuticon" type="image/x-con" href="images/favicon.ico"/>
+	<!-- Slicknav Links ----------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -20,14 +29,8 @@
 
 
 	</header>
-	
-	<!-- <nav>
-		<div> <a href="index.html">Home</a></div>
-		<div>Strength Training</div>
-		<div>Cardio Exercises</div>
-		<div>Stress Relief</div>
-		<div>Healthy Diet</div>
-	</nav> -->
+	<!-- below mobile menu auto-creates menu thing -->
+	<nav id="mobilemenu"></nav> 
 
 	<nav id="nav_menu">
 		<ul>
