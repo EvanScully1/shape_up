@@ -4,8 +4,10 @@
 	<!-- order of links matters! slicknav over main in this case -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="./styles/main.css">
 	<title>Shape Up!</title>
+	<link rel="shortcuticon" type="image/x-con" href="images/favicon.ico"/>
 	<!-- Slicknav Links ----------------------------------------->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<script src="js/jquery.slicknav.min.js"></script>
@@ -15,20 +17,17 @@
 		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
 		});
 	</script>
-	<link rel="stylesheet" href="styles/slicknav.css">
-	<link rel="stylesheet" href="styles/main.css">
-	<link rel="shortcuticon" type="image/x-con" href="images/favicon.ico"/>
-
 
 </head>
 
 <body>
 	<header>
 		<img src="images/shape_up_logo.png" alt="Logo Image">
-		<h2>Shape Up!</h2>
-		
-		<h3>Find the <span class="shadow">best </span>fit for you</h3>
-
+		<div>
+			<h2>Shape Up!</h2>
+			
+			<h3>Find the <span class="shadow">best </span>fit for you</h3>
+		</div>
 
 	</header>
 	<!-- below mobile menu auto-creates menu thing -->
